@@ -7,33 +7,50 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
             margin: 0;
             padding: 0;
+            background-image: url('your-background-image.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
         }
         .container {
             max-width: 800px;
             margin: 50px auto;
-            background-color: #fff;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         h1 {
             text-align: center;
             color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
         p {
             font-size: 18px;
             line-height: 1.6;
+            animation: fadeIn 1s ease-in-out;
         }
         a {
             color: #4CAF50;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s;
         }
         a:hover {
+            color: #fff; /* Change color on hover */
             text-decoration: underline;
         }
         .links {
@@ -45,6 +62,7 @@
         }
         .links li {
             margin-bottom: 10px;
+            animation: fadeIn 1.5s ease-in-out; /* Fade-in effect for links */
         }
     </style>
 </head>
@@ -68,16 +86,6 @@
                 <li><a href="https://www.geeksforgeeks.org/check-a-number-is-prime-or-not-using-javascript/" target="_blank">JavaScript Program for Prime Number</a></li>
             </ul>
         </div>
-
-        <h2>Project Idea:</h2>
-        <p>
-            As part of this week’s project, try to build a basic calculator app that performs operations like addition, subtraction, multiplication, and division. You can use C, Python, or JavaScript for this project.
-        </p>
-
-        <h2>Discussion Topic:</h2>
-        <p>
-            "Which programming language is better for beginners: Python, C, or Java?" Share your thoughts and discuss the advantages and challenges of each!
-        </p>
     </div>
 
 </body>
